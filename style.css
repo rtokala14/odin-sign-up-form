@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.left-part {
+    flex: 1;
+    background-image: url(./images/fassion.jpg);
+}
+
+.right-part {
+    flex: 1.7;
+}
