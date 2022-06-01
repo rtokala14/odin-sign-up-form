@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Fassion</title>
+    <title>Sign up form</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
 </head>
@@ -17,37 +17,53 @@
                     Unsplash</a></p>
     </div>
     <div class="right-part">
-        <p>
+        <p class="prologue start">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams.
         </p>
-        <p>
+        <p class="prologue stickler">
             Sign up <em>now</em> to get started.
         </p>
-        <p>You <em>know</em> you want to.</p>
+        <p class="prologue stinger">You <em>know</em> you want to.</p>
 
-        <form action="example.com/path" method="post">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" placeholder="John">
+        <form>
+            <fieldset id="entries">
+                <legend>Let's Do this!</legend>
 
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="Doe">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="John" required>
+                </div>
 
-            <label for="email">email</label>
-            <input type="email" id="email" placeholder="example@company.com">
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Doe" required>
+                </div>
 
-            <label for="phone">phone number</label>
-            <input type="number" id="phone" placeholder="xxxxxxxxxx">
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" id="email" placeholder="example@company.com" required>
+                </div>
 
-            <label for="pass">Password</label>
-            <input type="password" id="pass">
+                <div>
+                    <label for="phone">phone number</label>
+                    <input type="number" id="phone" placeholder="xxxxxxxxxx">
+                </div>
 
-            <label for="confPass">confirm password</label>
-            <input type="password" id="confPass">
+                <div>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" required>
+                </div>
 
+                <div>
+                    <label for="confPass">confirm password</label>
+                    <input type="password" id="confPass" required>
+                </div>
+
+            </fieldset>
             <button type="submit">Create Account</button>
         </form>
-        <p>Already have an account? <a href="">Log in</a></p>
+        <p class="epilogue">Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 </html>
